@@ -1,0 +1,1 @@
+# AdobeCap folder
