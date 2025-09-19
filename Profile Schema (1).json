@@ -1,0 +1,137 @@
+{
+        "identityMap": {
+            "key": [
+                {
+                    "authenticatedState": "ambiguous",
+                    "id": "john.doe@capillarytech.com",
+                    "primary": true
+                }
+            ]
+        },
+        "loyalty": {
+            "joinDate": "2018-11-12T20:20:39+00:00",
+            "loyaltyID": [
+                "loyaltyID1"
+            ],
+            "email": "",
+            "phone": "",
+            "firstName": "",
+            "lastName": "",
+            "fullName": "",
+            "gender": "",
+            "city": "",
+            "state": "",
+            "dob": "",
+            "points": 1250,
+            "lifetimePoints": 122,
+            "expiredPoints": 12,
+            "returnPoints": 0,
+            "adjustedPoints": 0,
+            "promisedPoints": 0,
+            "lifetimePurchases": 1234,
+            "pointsExpiration": [
+                {
+                    "pointsExpirationDate": "2018-11-12T20:20:39+00:00",
+                    "pointsExpiring": 200
+                }
+            ],
+            "pointsRedeemed": 500,
+            "program": "loyalty program name",
+            "status": "active",
+            "programPoints": [
+                {
+                    "programId": 123,
+                    "currentPoints": 0,
+                    "lifetimepoints": 0,
+                    "Reedemedpoints": 0,
+                    "Expiredpoints": 0,
+                    "Returnpoints": 0,
+                    "Adjustedpoints": 0,
+                    "Promisedpoints": 0,
+                    "LifetimePurchases": 0,
+                    "pointsScheduledForExpiry": "2018-11-12T20:20:39+00:00",
+                    "scheduledExpiryDate": "2018-11-12T20:20:39+00:00"
+                }
+            ],
+            "tier": "gold",
+            "upgradeDate": "2017-11-12T20:20:39+00:00",
+            "new_nextTier": "platinum",
+            "new_pointsToNextTier": 1750,
+            "cardsDetails": [
+                {
+                    "cardSeries": "AJX1234ZG",
+                    "cardNumber": "AJSHSL1234",
+                    "cardStatus": "Active"
+                }
+            ],
+            "new_rewards": {
+                "coupons": [
+                    {
+                        "id": "SUMMER-123456",
+                        "series": "coupon pool id/promotion id/series id",
+                        "name": "Summer 10% off all products",
+                        "startDate": "2018-11-12T20:20:39+00:00",
+                        "expiryDate": "2018-11-12T20:20:39+00:00",
+                        "state": "active/expired/redeemed",
+                        "storeName": "",
+                        "discountvalue": 0,
+                        "redeemptionCount": "0/1"
+                    }
+                ],
+                "giveaways": [
+                    {
+                        "id": "STEAM_ELDEN_RING_CODE_123456",
+                        "series": "giveaway pool id/promotion id/series id",
+                        "name": "Steam Elden Ring code giveaway pool",
+                        "partnerName": "Valve Inc.",
+                        "partnerId": "",
+                        "startDate": "",
+                        "expiryDate": "",
+                        "state": "issued",
+                        "type": ""
+                    }
+                ],
+                "badges": [
+                    {
+                        "name": "string",
+                        "id": "string",
+                        "description": "string",
+                        "state": "string",
+                        "startdate": "2018-11-12T20:20:39+00:00",
+                        "enddate": "2018-11-12T20:20:39+00:00"
+                    }
+                ],
+                "referrals": [
+                    {
+                        "id": "referral_code",
+                        "series": "referral pool id/promotion id",
+                        "name": "refer a friend get buy 1 get 1 free",
+                        "startDate": "2018-11-12T20:20:39+00:00",
+                        "expiryDate": "2018-11-12T20:20:39+00:00",
+                        "recipient": "referred-customer's loyalty id?",
+                        "state": "active/redeemed"
+                    }
+                ],
+                "challenges": [
+                    {
+                        "id": "challenge_id_1",
+                        "series": "challenge promotion id or similar",
+                        "name": "spend $50 within a month",
+                        "state": "active",
+                        "frequencyType": "",
+                        "targets": [
+                            {
+                                "name": "spend target",
+                                "target": 50,
+                                "progress": 15,
+                                "targetType": "",
+                                "targetEntity": "",
+                                "startDate": "",
+                                "endDate": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }

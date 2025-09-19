@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "367ccb61-fd0f-48cb-8b7f-5750cd662213",
+		"name": "Sample Profile and Events Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44669603",
+		"_collection_link": "https://amogh-1553940.postman.co/workspace/Amogh-'s-Workspace~7f0e401b-9c5f-44f0-8e8b-c00cd1929af9/collection/44669603-367ccb61-fd0f-48cb-8b7f-5750cd662213?action=share&source=collection_link&creator=44669603"
+	},
+	"item": [
+		{
+			"name": "Profile Update/Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "sandbox-name",
+						"value": "capillarytech-ucp"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{Access_Token}}"
+					},
+					{
+						"key": "x-adobe-flow-id",
+						"value": "0f8eb453-c20c-472c-b30a-85ca1515044c"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"/uri-reference\",\n    \"_repo\": {\n        \"createDate\": \"2025-06-18T12:00:00-06:00\",\n        \"modifyDate\": \"2025-06-18T12:00:00-06:00\"\n    },\n    \"createdByBatchID\": \"/uri-reference\",\n    \"identityMap\": {\n        \"email\": [\n            {\n                \"authenticatedState\": \"ambiguous\",\n                \"id\": \"john.doe@capillarytech.com\",\n                \"primary\": true\n            }\n        ]\n    },\n    \"loyalty\": {\n        \"tier\": \"Silver\"\n    },\n    \"modifiedByBatchID\": \"/uri-reference\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dcs.adobedc.net/collection/6d216b4fb6bee64b9b4579ce7614ff9e0a33929b23c5f21a47c35687d05c0a50",
+					"protocol": "https",
+					"host": [
+						"dcs",
+						"adobedc",
+						"net"
+					],
+					"path": [
+						"collection",
+						"6d216b4fb6bee64b9b4579ce7614ff9e0a33929b23c5f21a47c35687d05c0a50"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST https://dcs.adobedc.net/collection/667b41cf2dbf3509927da1ebf7e93c20afa727cc8d8373e51da18b62e1b985ec \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n        \"header\": {\r\n          \"schemaRef\": {\r\n            \"id\": \"https://ns.adobe.com/{TENANT}/schemas/7f682c29f887512a897791e7161b90a1ae7ed3dd07a177b1\",\r\n            \"contentType\": \"application/vnd.adobe.xed-full-notext+json; version=1.0\"\r\n          },\r\n          \"flowId\": \"f2ae0194-8bd8-4a40-a4d9-f07bdc3e6ce2\",\r\n          \"datasetId\": \"604a18a3bae67d18db6d258c\"\r\n        },\r\n        \"body\": {\r\n          \"xdmMeta\": {\r\n            \"schemaRef\": {\r\n              \"id\": \"https://ns.adobe.com/{TENANT}/schemas/7f682c29f887512a897791e7161b90a1ae7ed3dd07a177b1\",\r\n              \"contentType\": \"application/vnd.adobe.xed-full-notext+json; version=1.0\"\r\n            }\r\n          },\r\n          \"xdmEntity\": {\r\n            \"_id\": \"http-source-connector-acme-01\",\r\n            \"person\": {\r\n              \"name\": {\r\n                \"firstName\": \"suman\",\r\n                \"lastName\": \"nolan\"\r\n              }\r\n            },\r\n            \"workEmail\": {\r\n              \"primary\": true,\r\n              \"address\": \"suman@acme.com\",\r\n              \"type\": \"work\",\r\n              \"status\": \"active\"\r\n            }\r\n          }\r\n        }\r\n      }'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "sandbox-name",
+						"value": "capillarytech-ucp"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{Access_Token}}"
+					},
+					{
+						"key": "x-adobe-flow-id",
+						"value": "7c541aa7-abaf-4332-accf-c5b7fd24410c"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"T0015\",\n    \"timestamp\": \"2025-07-14T12:00:00-06:00\",\n\t\"identityMap\": {\n        \"email\": [\n            {\n                \"authenticatedState\": \"ambiguous\",\n                \"id\": \"john.doe@capillarytech.com\",\n                \"primary\": true\n            }\n        ]\n    },\n    \"commerce\": {\n        \"commerceScope\": {\n            \"storeCode\": \"HSR\"\n        },\n        \"order\": {\n            \"priceTotal\": 360\n        }\n\t},\n        \"productListItems\": [\n            {\n                \"SKU\": \"sku_02\",\n                \"quantity\": 2,\n                \"priceTotal\": 100, \n                \"name\": \"Oreo\",\n                \"discountAmount\": 10                \n            },\n            {\n                \"SKU\": \"sku_03\",\n                \"quantity\": 2,\n                \"priceTotal\": 100, \n                \"name\": \"Dairy Milk\",\n                \"discountAmount\": 10                \n            }\n        ]\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dcs.adobedc.net/collection/6d216b4fb6bee64b9b4579ce7614ff9e0a33929b23c5f21a47c35687d05c0a50",
+					"protocol": "https",
+					"host": [
+						"dcs",
+						"adobedc",
+						"net"
+					],
+					"path": [
+						"collection",
+						"6d216b4fb6bee64b9b4579ce7614ff9e0a33929b23c5f21a47c35687d05c0a50"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST https://dcs.adobedc.net/collection/667b41cf2dbf3509927da1ebf7e93c20afa727cc8d8373e51da18b62e1b985ec \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n        \"header\": {\r\n          \"schemaRef\": {\r\n            \"id\": \"https://ns.adobe.com/{TENANT}/schemas/7f682c29f887512a897791e7161b90a1ae7ed3dd07a177b1\",\r\n            \"contentType\": \"application/vnd.adobe.xed-full-notext+json; version=1.0\"\r\n          },\r\n          \"flowId\": \"f2ae0194-8bd8-4a40-a4d9-f07bdc3e6ce2\",\r\n          \"datasetId\": \"604a18a3bae67d18db6d258c\"\r\n        },\r\n        \"body\": {\r\n          \"xdmMeta\": {\r\n            \"schemaRef\": {\r\n              \"id\": \"https://ns.adobe.com/{TENANT}/schemas/7f682c29f887512a897791e7161b90a1ae7ed3dd07a177b1\",\r\n              \"contentType\": \"application/vnd.adobe.xed-full-notext+json; version=1.0\"\r\n            }\r\n          },\r\n          \"xdmEntity\": {\r\n            \"_id\": \"http-source-connector-acme-01\",\r\n            \"person\": {\r\n              \"name\": {\r\n                \"firstName\": \"suman\",\r\n                \"lastName\": \"nolan\"\r\n              }\r\n            },\r\n            \"workEmail\": {\r\n              \"primary\": true,\r\n              \"address\": \"suman@acme.com\",\r\n              \"type\": \"work\",\r\n              \"status\": \"active\"\r\n            }\r\n          }\r\n        }\r\n      }'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Generate Access Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "{{clientid}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{secret}}",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "openid AdobeID read_organizations additional_info.projectedProductContext session",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ims-na1.adobelogin.com/ims/token",
+					"protocol": "https",
+					"host": [
+						"ims-na1",
+						"adobelogin",
+						"com"
+					],
+					"path": [
+						"ims",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
