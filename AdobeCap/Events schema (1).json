@@ -1,0 +1,31 @@
+[{
+    "_id": "T0001",
+    "timestamp": "2025-07-14T12:00:00-06:00",
+	"identityMap": {
+        "email": [
+            {
+                "authenticatedState": "ambiguous",
+                "id": "john@capillarytech.com",
+                "primary": true
+            }
+        ]
+    },
+    "commerce": {
+        "commerceScope": {
+            "storeCode": "HSR"
+        },
+        "order": {
+            "priceTotal": 90
+        }
+	},
+        "productLineItems": [
+            {
+                "SKU": "sku_01",
+                "quantity": 1,
+                "priceTotal": 100, 
+                "name": "Kitkat",
+                "discountAmount": 10                
+            }
+        ]
+    
+}]
